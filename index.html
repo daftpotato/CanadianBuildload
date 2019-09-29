@@ -33,6 +33,14 @@
 				//$("#spambox").append("gamemode: " + gamemode + "<br>");
 				//$("#spambox").append("mapname: " + mapname + "<br>");
 			}
+			
+			function SetFilesTotal( total ) {}
+			
+			function DownloadingFile( fileName ) {}
+			
+			function SetStatusChanged( status ) {}
+			
+			function SetFilesNeeded( needed ) {}
 	
 		</script>
 
@@ -44,8 +52,8 @@
 		$gamemode = $_GET[gamemode];
 		
 		
-		$authserver = bcsub( $communityid, '76561197994335069' ) & 1;
-		$authid = (bcsub( $communityid, '76561197994335069' ) - $authservers ) / 2;
+		$authserver = bcsub( $communityid, '76561197960265728' ) & 1;
+		$authid = (bcsub( $communityid, '76561197960265728' ) - $authservers ) / 2;
 		$steamid = "STEAM_0:$authserver:$authid";
 		
 		?>
